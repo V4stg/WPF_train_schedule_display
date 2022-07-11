@@ -1,0 +1,111 @@
+﻿<UserControl
+    x:Class="WPF_train_schedule_display.View.RouteView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF_train_schedule_display.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid Background="MidnightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Background="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Column="0"
+                VerticalContentAlignment="Center"
+                Content="9005"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="MidnightBlue" />
+            <Label
+                Grid.Column="1"
+                VerticalContentAlignment="Center"
+                Content="TÓPART IC - Nagykanizsa"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="MidnightBlue" />
+            <Label
+                Grid.Column="2"
+                VerticalContentAlignment="Center"
+                Content="kocsi ikon"
+                Foreground="MidnightBlue" />
+            <Label
+                Grid.Column="3"
+                VerticalContentAlignment="Center"
+                Content="001"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="MidnightBlue" />
+        </Grid>
+
+        <StackPanel
+            Grid.Row="1"
+            Orientation="Vertical">
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="bogyó ikon" />
+                <Label
+                    Width="400"
+                    Content="Budapest-Déli"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Foreground="LightGray" />
+                <Label
+                    Content="11:35"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Foreground="LightGray" />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="bogyó ikon" />
+                <Label
+                    Width="400"
+                    Content="Budapest-Kelenföld"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Foreground="LightGray" />
+                <Label
+                    Content="11:39"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Foreground="LightGray" />
+            </StackPanel>
+        </StackPanel>
+
+        <Grid
+            Grid.Row="2"
+            Background="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Column="0"
+                Content="2022.07.11"
+                FontSize="20"
+                FontWeight="Bold" />
+            <Label
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                Content="12:21:34"
+                FontSize="20"
+                FontWeight="Bold" />
+        </Grid>
+    </Grid>
+</UserControl>
